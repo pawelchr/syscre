@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=/home/pawel/playground/syscre/syscre/Cargo.toml
+cargo:rustc-link-search=native=/home/pawel/playground/syscre/syscre/target/bootimage/bootloader/x86_64-bootloader/release/build/bootloader-856b7626d1623b71/out
+cargo:rustc-link-lib=static=kernel_bin-syscre
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=/home/pawel/playground/syscre/syscre/target/x86_64-syscre/debug/syscre
+cargo:rerun-if-changed=build.rs
